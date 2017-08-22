@@ -1,0 +1,592 @@
+#grid,
+#grid #mask_slider,
+#view-project,
+header {
+    overflow: hidden
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    opacity: 0;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s
+}
+
+::selection {
+    background: #000;
+    color: #fff
+}
+
+::-moz-selection {
+    background: #000;
+    color: #fff
+}
+
+#contact::selection {
+    background: #fff!important;
+    color: #000!important
+}
+
+#contact #contact::-moz-selection {
+    background: #fff;
+    color: #000
+}
+
+#viewport {
+    height: 100%;
+    width: 100%
+}
+
+.views {
+    height: auto;
+    width: 100%
+}
+
+#black,
+#cache {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: none;
+    height: 100vh
+}
+
+#view-main {
+    background-color: #fff;
+    margin-bottom: 500px
+}
+
+#view-main p {
+    padding: 250px 0 100px
+}
+
+@media (max-width:800px) {
+    #view-main p {
+        padding: 110px 0 50px
+    }
+}
+
+#view-main h2 {
+    padding: 200px 0 150px
+}
+
+@media (max-width:800px) {
+    #view-main h2 {
+        padding: 80px 0 150px
+    }
+}
+
+@media (max-width:500px) {
+    #view-main p {
+        font-size: 22px;
+        padding: 100px 0 0
+    }
+    #view-main h2 {
+        font-size: 30px;
+        padding: 10px 0 100px
+    }
+}
+
+#black {
+    opacity: 0;
+    background-color: #000;
+    z-index: 2
+}
+
+#cache,
+.content {
+    background-color: #fff
+}
+
+#cache {
+    z-index: 3;
+    -moz-transform: translate(0, 100%);
+    -o-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%)
+}
+
+#view-project {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: none;
+    -moz-transform: translate(0, 100%);
+    -o-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    height: 100%;
+    z-index: 9900
+}
+
+#view-project #margin {
+    height: 80vh
+}
+
+#view-project h3 {
+    font-size: 50px;
+    height: auto;
+    position: relative!important;
+    padding: 3em 0 1.5em
+}
+
+#view-project p {
+    padding-bottom: 6em
+}
+
+@media (max-width:500px) {
+    #view-project p {
+        font-size: 22px
+    }
+}
+
+#view-project img {
+    margin-top: 10px!important
+}
+
+#view-project #close {
+    height: 100vh
+}
+
+#view-project #close #btn_close {
+    height: 25px;
+    width: 25px;
+    padding: 30px;
+    margin: -50px auto 0;
+    position: relative;
+    top: 50%
+}
+
+#view-project #close #btn_close:hover svg {
+    cursor: pointer;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: auto
+}
+
+#contact {
+    position: fixed;
+    bottom: 0;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    background-color: #000
+}
+
+#contact .half {
+    color: #fff;
+    font-size: 23px;
+    font-family: Apercu_light;
+    width: 50%;
+    height: auto;
+    position: relative;
+    float: left;
+    line-height: 135%
+}
+
+#contact .half a {
+    color: #fff;
+    text-decoration: none
+}
+
+#contact .half a:hover {
+    text-decoration: underline
+}
+
+@media (max-width:800px) {
+    #contact .half:first-child {
+        width: 100%
+    }
+    #contact .half:last-child {
+        display: none
+    }
+}
+
+#contact .half ul {
+    list-style: none;
+    width: 223px;
+    position: relative;
+    margin: 50px auto 0
+}
+
+#contact .half ul li {
+    display: inline-block
+}
+
+#contact .half ul li a {
+    font-family: social;
+    font-size: 16px;
+    padding: 4px;
+    text-decoration: none!important;
+    width: 40px
+}
+
+#contact .half span {
+    display: block;
+    width: 220px;
+    position: relative;
+    margin: 170px auto 0;
+    height: auto
+}
+
+#contact .half form {
+    top: 170px;
+    width: 326px;
+    position: relative;
+    margin: 0 auto
+}
+
+#contact .half form input[type=text],
+#contact .half textarea {
+    margin-bottom: 15px;
+    width: 306px;
+    background: #000;
+    float: left;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-family: Apercu_light;
+    font-size: 20px;
+    position: relative
+}
+
+#contact .half form button:focus,
+#contact .half form input:focus,
+#contact .half form select:focus,
+#contact .half form textarea:focus {
+    outline: 0
+}
+
+#contact .half form input[type=text]::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+#contact .half form input[type=text]:-moz-placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+#contact .half form input[type=text]::-moz-placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+#contact .half form input[type=text]:-ms-input-placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+#contact .half textarea::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+#contact .half textarea:-moz-placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+#contact .half textarea::-moz-placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+#contact .half textarea:-ms-input-placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+#contact input[type=submit] {
+    position: relative;
+    float: left;
+    width: 326px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #000;
+    padding: 10px;
+    font-family: Apercu_light;
+    font-size: 20px
+}
+
+#contact input[type=submit]:hover {
+    color: #000;
+    background-color: #fff;
+    cursor: pointer
+}
+
+#contact .form-message-success {
+    position: relative;
+    top: 10px;
+    font-size: 16px
+}
+
+header {
+    height: 100vh;
+    width: 100%
+}
+
+header:hover {
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab
+}
+
+header:hover.grabbable {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing
+}
+
+header #alt_logo {
+    display: none;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    top: 42vh
+}
+
+.navPlace {
+    position: relative;
+    height: 137px;
+    top: 0
+}
+
+@media (max-width:500px) {
+    .navPlace {
+        height: 80px
+    }
+}
+
+nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 137px;
+    width: calc(100vw - 20px);
+    position: relative;
+    font-family: Apercu_regular;
+    font-weight: 400;
+    font-size: 24px;
+    top: -137px;
+    z-index: 50000;
+    pointer-events: none
+}
+
+h2,
+p {
+    font-family: Apercu_light;
+    text-align: center;
+    font-weight: 400
+}
+
+@media (max-width:500px) {
+    nav {
+        font-size: 20px;
+        height: 80px;
+        top: -80px
+    }
+}
+
+nav.in {
+    position: fixed!important;
+    top: 0!important;
+    margin-top: 0!important
+}
+
+.rows,
+nav ul {
+    position: relative
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    top: 40px;
+    right: 50px
+}
+
+nav ul li {
+    display: inline-block
+}
+
+nav ul li a {
+    pointer-events: auto;
+    display: block;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    color: #000
+}
+
+nav ul li a:hover {
+    text-decoration: underline
+}
+
+.rows {
+    height: auto!important;
+    margin: 0 auto;
+    width: 65%
+}
+
+.rows.text {
+    width: 70%;
+    max-width: 550px
+}
+
+.rows.image {
+    display: block;
+    width: 80%!important;
+    max-width: 1200px
+}
+
+@media (max-width:500px) {
+    nav ul {
+        float: none;
+        top: 14px;
+        padding-left: 20px;
+        text-align: center;
+        right: auto
+    }
+    nav ul li a {
+        padding: 14px 20px
+    }
+    .rows.image {
+        width: 100%!important
+    }
+}
+
+@media (max-width:800px) {
+    .rows.image {
+        width: 90%!important
+    }
+}
+
+h2 {
+    font-size: 35px
+}
+
+p {
+    font-size: 24px;
+    line-height: 125%
+}
+
+h3 {
+    font-size: 80px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font-family: Apercu_bold;
+    font-weight: 400
+}
+
+#grid #mask_slider {
+    position: relative;
+    height: 100%;
+    width: 100%
+}
+
+#grid #mask_slider #slider {
+    width: 20000px;
+    height: 100%
+}
+
+#grid #mask_slider #slider .blocks {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    -moz-transform: scale(.5);
+    -o-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    float: left
+}
+
+#grid #mask_slider #slider .blocks:hover {
+    cursor: pointer
+}
+
+#grid #mask_slider #slider .blocks:hover h3 {
+    z-index: 0
+}
+
+#grid #mask_slider #slider .blocks:hover img {
+    z-index: 100000
+}
+
+#grid #mask_slider #slider .blocks h3 {
+    color: #000;
+    top: calc(100% - 50px);
+    z-index: 55000;
+    float: left;
+    position: absolute
+}
+
+#grid #mask_slider #slider .blocks span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden
+}
+
+#grid #mask_slider #slider .blocks span img {
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.link_content {
+    top: 50px;
+    font-family: Apercu_light;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none
+}
