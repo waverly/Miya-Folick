@@ -1,5 +1,3 @@
-
-
 const nav = document.querySelector('#mobile');
 const menu = document.querySelector('.menu');
 const navWrap = document.querySelector('.navWrap');
@@ -21,40 +19,15 @@ document.querySelector('body').addEventListener('click touchend', function(e){
 });
 
 const navsocial = document.querySelector('.sociallink');
-console.log(navsocial);
 navsocial.addEventListener('click', function(e){
   e.preventDefault();
 });
-
-// const navtour = document.querySelector('.tour');
-// navtour.addEventListener('click', function(e){
-//   console.log(tour);
-//   e.preventDefault();
-// });
 
 const navlisten = document.querySelector('.listenlink');
 navlisten.addEventListener('click', function(e){
   console.log(tour);
   e.preventDefault();
 });
-
-
-
-//
-// navlinks.forEach(link => ()=>{link.addEventListener('click', function(e){
-//     console.log(link);
-//     if (link.href=""){
-//
-//     }
-//     e.preventDefault()
-//   })
-// }
-// );
-// console.log(navlinks);
-// navlinks.addEventListener("click", funciton(e){
-//   console.log(e);
-//   e.preventDefault();
-// });
 
 function menuToggle(){
   if (menu.innerHTML === "menu"){
